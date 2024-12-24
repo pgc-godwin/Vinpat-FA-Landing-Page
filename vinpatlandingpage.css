@@ -1,0 +1,175 @@
+* {
+box-sizing: border-box;
+}
+
+:root {
+  --color2: rgb(219, 68, 146);
+  --color1: rgb(96, 8, 96)
+}
+  html {
+  min-width: 500px;
+  overflow-x: hidden;
+  font-family: Raleway
+}
+
+body {
+  background-color: rgb(255, 244, 249);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 235, 245);
+    
+  }
+  
+  
+  
+  header img {
+    width: 100px;
+    margin-left: 5px;
+  }
+  
+  #nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+  } 
+  
+  #nav-bar p {
+    margin: 0 7px;
+    
+  }
+  
+  header h2 {
+    color: rgb(96, 8, 96);
+    position: absolute;
+    left: 120px;
+    margin: 0;
+    line-height: 20px;
+    border: 1px solid rgb(219, 68, 146);
+    padding: 3px
+  }
+
+  header a {
+    color: rgb(96, 8, 96);
+    text-decoration: none;
+  
+  }
+
+  header a:hover {
+    
+    padding: 0.5px;
+    color: var(--color2);
+    
+  
+  }
+
+  span {
+    font-weight: 300;
+  }
+
+  @media (max-width:500px) {
+    #nav-bar {
+      font-size: 0.8rem
+    }
+    header h2 {
+      font-size: 1.2rem;
+      position: absolute;
+      left: 100px;
+
+    }
+    header img {
+      width: 80px
+    }
+  
+    }
+
+  .details {
+    display: block;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    border: 10 dashed var(--color2);
+    background-color: rgb(255, 235, 245);
+  }
+
+  .details h3, h3 {
+    text-align: center;
+    color: var(--color1);
+    padding-top: 10px;
+    padding-bottom: 0%;
+  }
+
+  input {
+    width: 100%;
+    display: block;
+    margin: 5px 0px;
+    height: 25px;
+    border: 1px dotted rgb(219, 68, 146);    
+  }
+
+  input:active {
+    width: 100%;
+    display: block;
+    margin: 5px 0px;
+    height: 25px;
+    border: 1px dotted rgb(219, 68, 146);    
+  }
+
+  #submit {
+    background-color: rgb(219, 68, 146);
+    color:aliceblue;
+    border: 0;
+  }
+  
+  label {
+    display: block;
+    margin-left: 4px;
+    font-size: 90%;
+    color: rgb(96, 8, 96);
+    margin-bottom: -1px
+  }
+
+  iframe {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    width: 90%;
+  
+  }
+
+  .socials i{
+    font-size: 2rem;
+    margin: 7px;
+    color: var(--color1)
+}
+
+  .socials i:hover {
+    color: var(--color2);
+    padding: 0.5px
+  }
+
+#contact_us {
+  background-color: rgb(255, 235, 245);
+  
+}
+
+.socials {
+  border: 1px block var(--color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  padding-top: 0;
+  margin: 0 auto;
+}
